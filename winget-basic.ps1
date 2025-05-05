@@ -54,6 +54,7 @@ $apps = @(
     # "Beacn.Beacn" - doesn't exist, will submit it myself.
     "Blizzard.BattleNet"            # WoW, WoW, WoooooW!
     "AutoHotKey.AutoHotKey"         # Task automation, and runescape farming lol.
+    "ArobasMusic.GuitarPro.8"       # Guitar Pro 8
     "9N7F2SM5D1LR"                  # Windows HDR Calibration.
     "9PMMSR1CGPWG"                  # HEIF-PictureExtension.
     "9MVZQVXJBQ9V"                  # AV1 VideoExtension.
