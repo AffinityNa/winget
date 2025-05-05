@@ -4,26 +4,61 @@
 ### Here can you add apps that you want to configure during installation ###
 # just add the app id from winget
 $graphical = @(
-    "ClamWin.ClamWin"
+    #"ClamWin.ClamWin"
 );
 
 ### These apps are installed silently for all users ###
 # for msstore apps you need to specify the source like below
 
 $apps = @(
-    "7zip.7zip"
-    "Foxit.FoxitReader"
-    "Microsoft.VCRedist.2015+.x64"
-    "Microsoft.VCRedist.2015+.x86"
-    "9NCBCSZSJRSB"          # Spotify
-    "9NKSQGP7F2NH"          # Whatsapp Desktop
-    "9WZDNCRFJ3TJ"          # Netflix
-    "9P6RC76MSMMJ"          # Prime Video
-    "9N7F2SM5D1LR"          # Windows HDR Calibration
-    "9PMMSR1CGPWG"          # HEIF-PictureExtension
-    "9MVZQVXJBQ9V"          # AV1 VideoExtension
-    "9NCTDW2W1BH8"          # Raw-PictureExtension
-    "9N95Q1ZZPMH4"          # MPEG-2-VideoExtension
+    "7zip.7zip"                     # 7 zip.
+    "WowUp.CF"                      # Addon manager for WoW.
+    "AntibodySoftware.WizTree"      # File Storage Manager/Disk Space Cleaner.
+    "Wacom.WacomTabletDriver"       # Art Monitor drivers.
+    "WarcraftLogs.Uploader"         # Uploader for log files in WoW to WarcraftLogs.
+    "Webroot.SecureAnywhere"        # My antivirus of choice as it also cleans up online activity and includes identity monitoring.
+    "Valve.Steam"                   # Steam.
+    "Valve.SteamLink"               # Steam Remote Play to PC from wherever.
+    "TechPowerUp.GPU-Z"             # GPU Z.
+    "Spotify.Spotify"               # Moosic.
+    "REALiX.HWiNFO"                 # PC stats.. might remove in favor of other tools later.
+    "Rem0o.FanControl"              # PC Fan Controller. trying this and others, will pick best one.
+    "Runelite.Runelite"             # Old School Runescape client. the best.
+    "rocksdanister.LivelyWallpaper" # Animated wallpapers. It's worth it.
+    "OBSProject.OBSStudio"          # OBS Studio for livestreaming and/or recording.
+    "OCBase.OCCT.Personal"          # Overclock Checking Tool. Benchmarks for PC stability.
+    "Opera.OperaGX"                 # I like it, hardly worse than base Chrome.
+    "Notepad++.Notepad++"           # Preferred note app.
+    "Nvidia.Broadcast"              # Mostly looks gimmicky, but trying it out.
+    "Nvidia.GeForceExperience"      # Drivers and shizz.
+    "Microsoft.PowerToys"           # Decent power user utilities, like pasting directly as JSON formatting anywhere.
+    "Microsoft.VisualStudioCode"    # Preferred IDE.
+    "Microsoft.WindowsTerminal"     # Preferred Terminal/CLI.
+    "Microsoft.VCRedist.2015+.x64"  # jibberish.
+    "Microsoft.VCRedist.2015+.x86"  # more jibberish.
+    "LastPass.LastPass"             # Password manager.
+    "GitHub.cli"                    # Access to Github from CLI.
+    "Greenshot.Greenshot"           # Lightweight Screenshot tool.
+    "File-New-Project.EarTrumpet"   # Full control over every audio source and every audio device and where they map.
+    "ElectronicArts.EADesktop"      # Hate that I need this lol.
+    "Elgato.4KCaptureUtility"       # Capturing Switch and other external devices for stream.
+    "Elgato.CameraHub"              # Capturing my mirrorless camera for stream.
+    "Elgato.ControlCenter"          # Controlling my lights for stream.
+    "Elgato.StreamDeck"             # Controlling and setting up my stream deck.
+    "EpicGames.EpicGamesLauncher"   # Epic Games Launcher.
+    "Discord.Discord"               # Discord.
+    "Ditto.Ditto"                   # Copy/Paste util with a clipboard history function among other things.
+    "CPUID.CPU-Z"                   # CPU - Z.
+    "CPUID.HWMonitor"               # Another monitoring tool, likely won't keep them all. just early days monitoring of new build.
+    "Bambulab.Bambustudio"          # 3D Printer studio app.
+    # "Beacn.Beacn" - doesn't exist, will submit it myself.
+    "Blizzard.BattleNet"            # WoW, WoW, WoooooW!
+    "AutoHotKey.AutoHotKey"         # Task automation, and runescape farming lol.
+    "9N7F2SM5D1LR"                  # Windows HDR Calibration.
+    "9PMMSR1CGPWG"                  # HEIF-PictureExtension.
+    "9MVZQVXJBQ9V"                  # AV1 VideoExtension.
+    "9NCTDW2W1BH8"                  # Raw-PictureExtension.
+    "9N95Q1ZZPMH4"                  # MPEG-2-VideoExtension.
 );
 
 $bloatware = @(
@@ -42,12 +77,12 @@ $bloatware = @(
 
     # Windows 11 23h2
     "Microsoft.OutlookForWindows"
-    "Microsoft.Windows.DevHomeAzureExtension"           # DEV Home
+    "Microsoft.Windows.DevHomeAzureExtension"       # DEV Home
     "Microsoft.Windows.Ai.Copilot.Provider"         # Copilot
 
     # default Windows 10 apps
     "Microsoft.549981C3F5F10"           # Cortana Offline
-    "Microsoft.OneDriveSync"            # Onedrive
+    #"Microsoft.OneDriveSync"           # Onedrive
     "Microsoft.3DBuilder"
     "Microsoft.BingFinance"
     "Microsoft.BingNews"
@@ -73,13 +108,13 @@ $bloatware = @(
     #"Microsoft.WindowsCamera"
     #"microsoft.windowscommunicationsapps"          # Mail and Calender     
     "Microsoft.WindowsMaps"
-    "Microsoft.WindowsPhone"
+    #"Microsoft.WindowsPhone"                       # SMS to PC and other thins.
     "Microsoft.WindowsSoundRecorder"
-    #"Microsoft.WindowsStore"           # can't be re-installed
+    #"Microsoft.WindowsStore"                       # can't be re-installed
     "Microsoft.ZuneVideo"
     "Microsoft.YourPhone"
-    #"Microsoft.MSPaint"            # Paint & Paint3D
-    #"Microsoft.ZuneMusic"          # New Media Player in Windows
+    "Microsoft.MSPaint"                             # Paint & Paint3D
+    "Microsoft.ZuneMusic"                           # New Media Player in Windows
 
     # Xbox Apps
     #"Microsoft.Xbox.TCUI"
@@ -112,8 +147,8 @@ $bloatware = @(
     "Microsoft.Whiteboard"
 
     # non-Microsoft
-    #"4DF9E0F8.Netflix"
-    #"SpotifyAB.SpotifyMusic"
+    "4DF9E0F8.Netflix"
+    "SpotifyAB.SpotifyMusic"
     "2FE3CB00.PicsArt-PhotoStudio"
     "46928bounde.EclipseManager"
     "613EBCEA.PolarrPhotoEditorAcademicEdition"
