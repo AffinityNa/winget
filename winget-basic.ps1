@@ -51,7 +51,7 @@ $apps = @(
     "CPUID.CPU-Z"                   # CPU - Z.
     "CPUID.HWMonitor"               # Another monitoring tool, likely won't keep them all. just early days monitoring of new build.
     "Bambulab.Bambustudio"          # 3D Printer studio app.
-    # "Beacn.Beacn" - doesn't exist, will submit it myself.
+    "BEACN.BEACNApp"                # Software for my MixCreate and Mic. I submitted this manifest, check that it got approved.
     "Blizzard.BattleNet"            # WoW, WoW, WoooooW!
     "AutoHotKey.AutoHotKey"         # Task automation, and runescape farming lol.
     "ArobasMusic.GuitarPro.8"       # Guitar Pro 8
